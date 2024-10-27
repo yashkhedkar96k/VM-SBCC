@@ -1,0 +1,148 @@
+/*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');*/
+
+
+body {
+  background: rgb(204,204,204); 
+}
+
+.mytable,td,th{
+  border: solid 1px black;
+  border-collapse: collapse;
+
+}
+page {
+  position: relative;
+  background: white;
+text-align: justify-all;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  /* box-shadow: 0 0 0.5cm rgba(0,0,0,0.5); */
+  
+  /* background-color: rgb(217, 230, 247); */
+}
+page[size="A4"] {  
+  width: 21cm;
+  /* height: 27.7cm;  */
+  height: 27.7cm; 
+}
+
+
+header,
+footer {
+    text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  /*background-color: #ccc;*/
+  padding-right: 1.5cm;
+  padding-left: 1.5cm;
+  margin-bottom: 10px;
+}
+
+
+header {
+  top: 0;
+   padding-right: 1.5cm;
+    padding-left: 1.5cm;
+}
+header h3{
+    color: red;
+}
+footer {
+  bottom: 0;
+  color: #000;
+  padding-right: 1.5cm;
+  padding-left: 1.5cm;
+}
+.main {
+    
+    margin-top: 355px;
+    margin-left: 60px;
+    position: absolute;
+    text-align: justify-all;
+    line-height: 1.4;
+    
+}
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+  @page {
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: none;
+    }
+    body {
+        /* padding-top: 72px;
+        padding-bottom: 72px ;  */
+        /*padding-top: 25px;*/
+        /*padding-bottom: 25px ; */
+        box-shadow: none;
+    }
+  footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+   /* padding-right: 1.5cm;
+    padding-left: 1.5cm;
+    padding-bottom: 1.5cm;*/
+  }
+  table .data
+{
+  margin-left: 5px;
+}
+}
+
+#SRES{
+  margin-top: -15px;
+}
+.img
+{
+  
+  margin-left: 250px;
+  margin-right: 250px;
+  justify-content: center;
+}
+
+.img h4{
+  color: red;
+}
+
+.right
+{
+  float: right;
+  margin-right: 25px;
+
+}
+.left
+{
+  float: left;
+  margin-left: 25px;
+}
+#number
+{
+  float: left;
+  margin-top: 155px;
+  margin-left: 130px;
+}
+.blue{
+    border: 1px solid black;
+}
+table td 
+{
+  border: none;
+  padding: 6px;
+  font-weight: bolder;
+  font-family: 'Arimo', sans-serif;
+}  
+.data
+{
+  margin-left: 5px;
+}
+.bold {
+  font-weight: bolder;
+}
