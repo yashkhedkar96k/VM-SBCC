@@ -14,3 +14,10 @@ Route::get('/dashboard', [AuthController::class, 'dashboard'])->middleware('auth
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/index',[StudentImportController::class,'index'])->name('uploadcsv');
 Route::get('/addnewstudent',[AuthController::class,'addstudent'])->name('addstudent');
+Route::post('/student/store',[StudentImportController::class,'store'])->name('students.store');
+Route::get('/studentlist', [StudentImportController::class, 'studentlist'])->name('studentlist');
+Route::POST('/student-list-ajax', [StudentImportController::class, 'studentListAjax'])->name('student_list');
+Route::post('/delete-student', [StudentImportController::class, 'deleteStudent'])->name('delete_student');
+Route::get('/students/edit/{id}', [StudentImportController::class, 'edit'])->name('students.edit');
+Route::put('/students/update/{id}', [StudentImportController::class, 'update'])->name('students.update');
+

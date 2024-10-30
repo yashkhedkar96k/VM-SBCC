@@ -1,4 +1,5 @@
 
+
 <nav id="sidebar" class="sidebar-wrapper">
     <div class="sidebar-content">
       <div class="sidebar-brand">
@@ -34,7 +35,7 @@
 
             </li>
           <li class="sidebar-dropdown">
-            <a href="students_list.php">
+            <a href="{{Route('studentlist')}}">
             <i class="fas fa-list-ul"></i>
               <span>Student List</span>
             </a>
@@ -71,6 +72,7 @@
       <!-- sidebar-menu  -->
     </div>
   </nav>
+
   <!-- sidebar-wrapper  -->
 <!-- page-wrapper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
