@@ -15,7 +15,8 @@
 </head>
 
 <body>
-   @include('sidebar')
+<div class="page-wrapper chiller-theme toggled">
+@include('sidebar')
 
     <div class="container-fluid" style="margin-left: 250px;">
         <h2>Student List</h2>
@@ -92,6 +93,17 @@
         });
     });
 });
+
+$(document).on('click', '.print-lc-btn', function () {
+        const studentId = $(this).data('id');
+        
+        const printWindow = window.open(`/students/print-lc/${studentId}`, '_blank');
+        if (printWindow) {
+            printWindow.focus();
+        } else {
+            alert('Popup blocked! Please allow popups for this website.');
+        }
+    });
 
     </script>
 </body>

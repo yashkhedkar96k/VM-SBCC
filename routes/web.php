@@ -20,4 +20,6 @@ Route::POST('/student-list-ajax', [StudentImportController::class, 'studentListA
 Route::post('/delete-student', [StudentImportController::class, 'deleteStudent'])->name('delete_student');
 Route::get('/students/edit/{id}', [StudentImportController::class, 'edit'])->name('students.edit');
 Route::put('/students/update/{id}', [StudentImportController::class, 'update'])->name('students.update');
+Route::get('/lc',[StudentImportController::class,'lc'])->name('lc');
+Route::get('/students/print-lc/{studentId}', [StudentImportController::class, 'printLC']);
 

@@ -42,18 +42,7 @@
             
           </li>
 
-            <li class="sidebar-dropdown">
-            <a href="leavingCertification.php">
-            <i class="far fa-id-card"></i>
-              <span>Leaving Certificate</span>
-            </a>
-             </li>
-             <li class="sidebar-dropdown">
-            <a href=" total_completed_stud.php">
-            <i class="far fa-id-card"></i>
-              <span>Total Completed List</span>
-            </a>
-             </li>
+          
           <li class="sidebar-dropdown">
             <a href="about_us.php">
             <i class="fas fa-users"></i>
@@ -61,7 +50,7 @@
             </a>
           </li>
           <li class="sidebar-dropdown">
-            <a href="logout.php">
+            <a href="#">
             <i class="fas fa-sign-out-alt"></i>
               <span>Logout</span>
             </a>

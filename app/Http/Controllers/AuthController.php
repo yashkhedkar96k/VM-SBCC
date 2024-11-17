@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 class AuthController extends Controller
 {
     
+    
     public function showLoginForm()
     {
          return view('index');
@@ -47,9 +48,10 @@ class AuthController extends Controller
     // Logout function
     public function logout(Request $request)
     {
-        Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
+        Auth::logout();  // Log out the user
+        $request->session()->invalidate();  // Invalidate the session
+        $request->session()->regenerateToken();  // Regenerate the CSRF token to prevent attacks
+    
         return redirect('/login')->with('success', 'Logged out successfully');
     }
 }
